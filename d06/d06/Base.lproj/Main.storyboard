@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="d06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RBl-Uj-Q3w" appends="YES" id="7R6-5K-UrW"/>
+                            <outletCollection property="gestureRecognizers" destination="cq7-ZJ-REV" appends="YES" id="PN8-aN-BCZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="panGesture" destination="cq7-ZJ-REV" id="sfz-Xl-EjV"/>
+                        <outlet property="touchGesture" destination="RBl-Uj-Q3w" id="vMy-de-Fys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RBl-Uj-Q3w">
+                    <connections>
+                        <action selector="tapScreen:" destination="BYZ-38-t0r" id="GKz-6W-osd"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="jte-4c-dqN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cq7-ZJ-REV">
+                    <connections>
+                        <action selector="changLoc:" destination="BYZ-38-t0r" id="auZ-s3-g3v"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="mDy-oe-ycE"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'jschotte2018_Example' do
+  pod 'jschotte2018', :path => '../'
+
+  target 'jschotte2018_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

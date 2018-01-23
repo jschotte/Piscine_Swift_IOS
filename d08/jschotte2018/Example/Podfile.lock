@@ -1,0 +1,16 @@
+PODS:
+  - jschotte2018 (0.1.0)
+
+DEPENDENCIES:
+  - jschotte2018 (from `../`)
+
+EXTERNAL SOURCES:
+  jschotte2018:
+    :path: ../
+
+SPEC CHECKSUMS:
+  jschotte2018: e5236fb8e2a114052c8757fcafaf58b78201bab7
+
+PODFILE CHECKSUM: a206ca229bf44c99ea8587ed0afe3244d480ce16
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,6 @@
+framework module jschotte2018 {
+  umbrella header "jschotte2018-umbrella.h"
+
+  export *
+  module * { export * }
+}

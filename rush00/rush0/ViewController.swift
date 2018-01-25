@@ -93,8 +93,8 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKUIDelegate, WK
     func getTokenAccess(USERKEY: String)
     {
 
-        let CUSTOMER_KEY = "a632854ff611ad2c098dca9bdcef5eaf0f9e07b66ef6bae288bc866c5426081d"
-        let CUSTOMER_SECRET = "f4625239c21a7d968bf5405836061617ea736b4dc18a1c539caaf97658c07eb2"
+        let CUSTOMER_KEY = "XXXX"
+        let CUSTOMER_SECRET = "XXXX"
         
         let url = NSURL(string: "https://api.intra.42.fr/oauth/token")
         let request = NSMutableURLRequest(url: url! as URL)

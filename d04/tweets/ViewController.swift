@@ -110,8 +110,8 @@ class ViewController: UIViewController, APITwitterDelegate, UITableViewDelegate,
     
     func getTokenAccess()
     {
-        let CUSTOMER_KEY = "moMvFMY9WaQMbygpiA2c0EBXM"
-        let CUSTOMER_SECRET = "MHACDymHBlNpyc7Ih4vfK6vzREe8j3GyDO4gbtV2n91oClIpbq"
+        let CUSTOMER_KEY = "XXXX"
+        let CUSTOMER_SECRET = "XXXX"
         let BEARER = ((CUSTOMER_KEY + ":" + CUSTOMER_SECRET).data(using: String.Encoding.utf8))!.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
         
         let url = NSURL(string: "https://api.twitter.com/oauth2/token")
